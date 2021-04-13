@@ -1,0 +1,158 @@
+<html>
+    
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bestMenu-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <script src="cart-script.js" async></script>
+    
+    <title>bestMenu</title>
+    
+</head>
+    
+<body>
+
+    <header>
+        <nav>
+            <a class="meta-home" href="bestHome.html">Home</a>
+            
+            <div class="toggle">
+                <a href="bestHome.html" class="home-link">Home</a>
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            
+            <ul class="menu-link">
+                <li><a href="bestMenu.html">Meniu</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="bestFood.html">Mâncare</a></li>
+                    <li><a href="bestDrinks.html">Băuturi</a></li>
+                    <li><a href="bestCoffee.html">Cafea & Ceai</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                  $('nav ul').slideToggle('active')
+              })  
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu-link').hover(function(){
+                  $('.dropdown-menu ul').slideDown()
+              })
+             $('.list, .meta-home, main, footer').hover(function(){
+                  $('.dropdown-menu ul').slideUp()
+              })
+            })
+        </script>
+    
+    </header>
+        
+    <main>
+        <section class="title-section">
+            <div class="vertical-center">
+                <h2>Meniu</h2>
+                <h1>Mâncare, băutură și voie bună!</h1>
+            </div>
+        </section>
+        
+        <div class="wrapper">
+            <section class="main-section">
+                
+                <div class="card">  
+                    <div class="face top">
+                        <div class="content">
+                            <img src="foodIcons/dish.png">
+                            <h3>Mâncare</h3>
+                        </div>
+                    </div>
+                    <div class="face bottom">
+                        <div class="content">
+                            <p>Alege felul de mâncare preferat, preparat cu dragoste doar pentru tine.</p>
+                            <a href="bestFood.html">Mai Mult</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">  
+                    <div class="face top">
+                        <div class="content">
+                            <img src="foodIcons/glass-with-wine.png">
+                            <h3>Băuturi</h3>
+                        </div>
+                    </div>
+                    <div class="face bottom">
+                        <div class="content">
+                            <p>Alege să te răcorești cu beri autohtone și internaționale sau servește vinurile exclusiviste din beciurile noastre.</p>
+                            <a href="bestDrinks.html">Mai Mult</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">  
+                    <div class="face top">
+                        <div class="content">
+                            <img src="foodIcons/hot-chocolate.png">
+                            <h3>Cafea & Ceai</h3>
+                        </div>
+                    </div>
+                    <div class="face bottom">
+                        <div class="content">
+                            <p>Alege ceașca ta cu cafea preferată sau ceașca ta de ceai preferat.</p>
+                            <a href="bestCoffee.html">Mai Mult</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+        </div>
+    </main>
+    
+    <div class="footer-wrapper">
+        <footer>
+            
+            <ul>
+                <li><a href="bestHome.html">Home</a></li>
+                <li><a href="bestMenu.html">Meniu</a></li>
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+
+            <div class="footer-sm">
+                <a href="#">
+                    <img src=smIcons/youtube_social_circle_white.png alt="youtube icon">
+                </a>
+                <a href="https://www.facebook.com/pages/Pensiunea-Aranyos/474600559577954?rf=148877425717009">
+                    <img src=smIcons/f_logo_RGB-White_1024.png alt="facebook icon">
+                </a>
+                <a href="#">
+                    <img src=smIcons/glyph-logo_May2016-white.png alt="instagram icon">
+                </a>
+            </div>
+            
+            <div class="credits">
+                <p>© 2019 Universitatea Transilvania din Brasov | Made by <a href="bestAbout.html"><img src="creditsIcons/robot.png"> BeastRobotics</a></p>
+            </div>
+            
+        </footer>
+    </div>
+     
+</body>
+    
+</html>

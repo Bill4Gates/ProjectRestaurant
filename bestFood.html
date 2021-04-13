@@ -1,0 +1,262 @@
+<html>
+    
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bestFood-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="cart-script.js" async></script>
+    
+    <title>bestFood</title>
+    
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav>
+            
+            <a class="meta-home" href="bestHome.html">Home</a>
+            
+            <div class="toggle">
+                <a href="bestHome.html" class="home-link">Home</a>
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul class="menu-link">
+                <li><a href="bestMenu.html">Meniu</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="bestFood.html">Mâncare</a></li>
+                    <li><a href="bestDrinks.html">Băuturi</a></li>
+                    <li><a href="bestCoffee.html">Cafea & Ceai</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                  $('nav ul').slideToggle()
+              })  
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu-link').hover(function(){
+                  $('.dropdown-menu ul').slideDown()
+              })
+             $('.list, .meta-home, main, footer').hover(function(){
+                  $('.dropdown-menu ul').slideUp()
+              })
+            })
+        </script>
+        
+    </header>
+    
+    <main>
+        
+        <section class="title-section">
+            <div class="vertical-center">
+                <h2>Mâncare</h2>
+                <h1>Alege felul de mâncare preferat, preparat cu dragoste doar pentru tine.</h1>
+            </div>
+        </section>
+        
+        <div class="wrapper">
+            <section class="main-section">
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Costiță la grătar</span>
+                                <p>Costițe, cartofi pai, salată, sos<br>900gr/250gr/100gr/50gr</p>
+                                <span class="shop-item-price">52 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/ribs.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Mușchiuleț de vită</span>
+                                <p>Mușchiuleț de vită cu sos de piper verde<br>200gr/130gr</p>
+                                <span class="shop-item-price">34 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/muschi.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Mușchi de porc</span>
+                                <p>Mușchi de porc cu sos de gorgonzola și ciuperci<br>150gr/170gr/100gr</p>
+                                <span class="shop-item-price">27.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/porc.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ceafă de porc</span>
+                                <p>Ceafă de porc la grătar cu sos de piper roșu<br>250gr/130gr</p>
+                                <span class="shop-item-price">33 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/ceafa.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ciorbă de burtă</span>
+                                <p>80gr/350ml</p>
+                                <span class="shop-item-price">10 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/ciorbaBurta.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ciorbă de văcuță</span>
+                                <p>60gr/350ml</p>
+                                <span class="shop-item-price">9.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/ciorbaVacuta.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ciorbă țărănească de pui</span>
+                                <p>50gr/350ml</p>
+                                <span class="shop-item-price">8.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/ciorbaPui.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Aripioare de pui <br>la ceaun</span>
+                                <p>Aripioare de pui, cartofi pai, sos<br>500gr/200gr/50gr</p>
+                                <span class="shop-item-price">24.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/aripioare.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Pastramă de porc cu mămăligă</span>
+                                <p>Pastramă, mămăligă<br>250gr/300gr</p>
+                                <span class="shop-item-price">19 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/pastrama.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <!--CART SECTION!-->
+                
+                <h2 class="cart-title">Cart</h2>
+
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Articol</span>
+                    <span class="cart-price cart-header cart-column">Pret</span>
+                    <span class="cart-quantity cart-header cart-column">Cantitate</span>
+                </div>
+                
+                <div class="cart-items"></div>
+
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">0 LEI</span>
+                </div>
+
+                <button class="btn-purchase" type="button">Cumpara</button>
+                
+            </section>
+            
+        </div>
+    </main>
+    
+    <div class="footer-wrapper">
+        <footer>
+            <ul>
+                <li><a href="bestHome.html">Home</a></li>
+                <li><a href="bestMenu.html">Meniu</a></li>
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+
+            <div class="footer-sm">
+                <a href="#">
+                    <img src=smIcons/youtube_social_circle_white.png alt="youtube icon">
+                </a>
+                <a href="https://www.facebook.com/pages/Pensiunea-Aranyos/474600559577954?rf=148877425717009">
+                    <img src=smIcons/f_logo_RGB-White_1024.png alt="facebook icon">
+                </a>
+                <a href="#">
+                    <img src=smIcons/glyph-logo_May2016-white.png alt="instagram icon">
+                </a>
+            </div>
+            
+            <div class="credits">
+                <p>© 2019 Universitatea Transilvania din Brasov | Made by <a href="bestAbout.html"><img src="creditsIcons/robot.png"> BeastRobotics</a></p>
+            </div>
+            
+        </footer>
+    </div>
+       
+</body>
+    
+</html>

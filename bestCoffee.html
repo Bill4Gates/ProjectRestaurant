@@ -1,0 +1,262 @@
+<html>
+    
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bestCoffee-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+    
+    <script src="cart-script.js" async></script>
+    
+    <title>bestCoffee</title>
+    
+</head>
+    
+<body>
+    
+    <header>
+       
+        <nav>
+            <a class="meta-home" href="bestHome.html">Home</a>
+            
+            <div class="toggle">
+                <a href="bestHome.html" class="home-link">Home</a>
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            
+            <ul class="menu-link">
+                <li><a href="bestMenu.html">Meniu</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="bestFood.html">Mâncare</a></li>
+                    <li><a href="bestDrinks.html">Băuturi</a></li>
+                    <li><a href="bestCoffee.html">Cafea & Ceai</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                  $('nav ul').slideToggle('active')
+              })  
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu-link').hover(function(){
+                  $('.dropdown-menu ul').slideDown()
+              })
+             $('.list, .meta-home, main, footer').hover(function(){
+                  $('.dropdown-menu ul').slideUp()
+              })
+            })
+        </script>
+        
+    </header>
+    
+    <main>
+        
+        <section class="title-section">
+            <div class="vertical-center">
+                <h2>Cafea <br>&<br> Ceaiuri</h2>
+                <h1>Alege ceașca ta cu cafea preferată sau ceașca ta de ceai preferat.</h1>
+            </div>
+        </section>
+        
+        <div class="wrapper">
+            <section class="main-section">
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Espresso</span>
+                                <p>Espresso este o cafea concentrată, cu o aromă intensă, pregătită sub presiune într-un aparat special numit espressor.</p>
+                                <span class="shop-item-price">4.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/espresso.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Espresso Italian</span>
+                                <p>Espresso italian este o cească de băutură obținută prin trecerea sub presiune de apă caldă a cafelei măcinate.</p>
+                                <span class="shop-item-price">4.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/espresso-italian.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Cappuccino</span>
+                                <p>Cappuccino este o specialitate de cafea, la fel de eficientă precum un espresso dar mai lungă și dulce.</p>
+                                <span class="shop-item-price">5 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/cappuccino.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Caffe Latte</span>
+                                <p>Caffe latte se prepară prin turnarea peste espresso a unei cantități mari de lapte spumat.</p>
+                                <span class="shop-item-price">5.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/caffe-latte.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Espresso Machiatto</span>
+                                <p>Espresso machiatto este un espresso servit cu puțin lapte spumat la suprafață.</p>
+                                <span class="shop-item-price">5 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/espresso-machiatto.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Caffe Mocha</span>
+                                <p>Caffe mocha este o băutură de cafea cu ciocolată sau cafea preparată cu boabe Mocha.</p>
+                                <span class="shop-item-price">6 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/caffe-mocha.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ciocolată Caldă</span>
+                                <p>Ciocolata caldă este o băutură caldă gustoasă și densă, cu gust autentic de ciocolată amăruie.</p>
+                                <span class="shop-item-price">4.50 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/hot-chocolate.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ceai Negru</span>
+                                <p>Ceaiul negru provine din planta de ceai numită Camellia sinensis.</p>
+                                <span class="shop-item-price">5 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/black-tea.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <span class="shop-item-title">Ceai Verde</span>
+                                <p>Ceaiul verde este un tip de ceai obținut, spre deosebire de ceaiul negru din frunze nefermentate de Camelia sinensis.</p>
+                                <span class="shop-item-price">5 LEI</span>
+                                <button class="shop-item-button" type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <img src="foodIcons/green-tea.png">
+                        </div>
+                    </div>
+                </div>
+        
+                <!--CART SECTION!-->
+                
+                <h2 class="cart-title">Cart</h2>
+
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Articol</span>
+                    <span class="cart-price cart-header cart-column">Pret</span>
+                    <span class="cart-quantity cart-header cart-column">Cantitate</span>
+                </div>
+
+                <div class="cart-items"></div>
+
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">0 LEI</span>
+                </div>
+
+                <button class="btn-purchase" type="button">Cumpara</button>
+                
+            </section>
+        </div>
+    
+    </main>
+    
+    <div class="footer-wrapper">
+        <footer>
+            <ul>
+                <li><a href="bestHome.html">Home</a></li>
+                <li><a href="bestMenu.html">Meniu</a></li>
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+
+            <div class="footer-sm">
+                <a href="#">
+                    <img src=smIcons/youtube_social_circle_white.png alt="youtube icon">
+                </a>
+                <a href="https://www.facebook.com/pages/Pensiunea-Aranyos/474600559577954?rf=148877425717009">
+                    <img src=smIcons/f_logo_RGB-White_1024.png alt="facebook icon">
+                </a>
+                <a href="#">
+                    <img src=smIcons/glyph-logo_May2016-white.png alt="instagram icon">
+                </a>
+            </div>
+            
+            <div class="credits">
+                <p>© 2019 Universitatea Transilvania din Brasov | Made by <a href="bestAbout.html"><img src="creditsIcons/robot.png"> BeastRobotics</a></p>
+            </div>
+            
+        </footer>
+    </div>
+    
+</body>
+    
+</html>

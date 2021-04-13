@@ -1,0 +1,154 @@
+<html>
+    
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bestContact-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="reserved-script.js" async></script>
+    
+    <title>Contact</title>
+    
+</head>
+    
+<body>
+
+    <header>
+       
+        <nav>
+            <a class="meta-home" href="bestHome.html">Home</a>
+            
+            <div class="toggle">
+                <a href="bestHome.html" class="home-link">Home</a>
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            
+            <ul class="menu-link">
+                <li><a href="bestMenu.html">Meniu</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="bestFood.html">Mâncare</a></li>
+                    <li><a href="bestDrinks.html">Băuturi</a></li>
+                    <li><a href="bestCoffee.html">Cafea & Ceai</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu').click(function(){
+                  $('nav ul').slideToggle('active')
+              })  
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.menu-link').hover(function(){
+                  $('.dropdown-menu ul').slideDown()
+              })
+             $('.list, .meta-home, main, footer').hover(function(){
+                  $('.dropdown-menu ul').slideUp()
+              })
+            })
+        </script>
+        
+    </header>
+    
+    <main>
+        
+        <section class="title-section">
+            <div class="vertical-center">
+                <h2>Contact</h2>
+                <h1>Ne puteți contacta la numărul de telefon :<p class="phone-number">+40 123-456789</p>sau pe adresa de e-mail :<p class="mail-adress">contact@pensiunearanyos.ro</p></h1>
+            </div>
+        </section>
+        
+        <div class="wrapper">
+        
+            <section class="location-section">
+
+                <div class="location-details">
+                    <h3>Cum ajungi la noi</h3>
+                    <h1>Locația</h1>
+                    <h2>Între localitatea Ghimeș și Răchitiș, locația noastră se află pe partea dreaptă din direcția Bacău - Ghimeș.</h2>
+                    <h4>106 Km</h4>
+                    <h5>De la Bacău</h5>
+                    <h4>152 Km</h4>
+                    <h5>De la Brașov</h5>
+                    <h4>332 Km</h4>
+                    <h5>De la București</h5>
+                </div>
+                
+                <div class="map-text">
+                    <h0>Între localitatea Ghimeș și Răchitiș, locația noastră se află pe partea dreaptă din direcția Bacău - Ghimeș.</h0>
+                </div>
+                
+                <div id="map"></div>
+
+                <script>
+                    function initMap() {
+                        var location = {lat: 46.641652, lng: 26.036530};
+                        var map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 9,
+                            center: location
+                        });
+                        var marker = new google.maps.Marker({
+                            position: location,
+                            map: map
+                        });
+                    }
+                </script>
+
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCUuWvyFfTCDV-7p2XssOjS88GeJWlP9s&callback=initMap"
+                  type="text/javascript"></script>
+
+            </section>
+            
+        </div>
+        
+    </main>
+    
+    <div class="footer-wrapper">
+        <footer>
+            <ul>
+                <li><a href="bestHome.html">Home</a></li>
+                <li><a href="bestMenu.html">Meniu</a></li>
+                <li><a href="bestReserved.html">Rezervări</a></li>
+                <li><a href="bestEvents.html">Evenimente</a></li>
+                <li><a href="bestContact.html">Contact</a></li>
+            </ul>
+
+            <div class="footer-sm">
+                <a href="#">
+                    <img src=smIcons/youtube_social_circle_white.png alt="youtube icon">
+                </a>
+                <a href="https://www.facebook.com/pages/Pensiunea-Aranyos/474600559577954?rf=148877425717009">
+                    <img src=smIcons/f_logo_RGB-White_1024.png alt="facebook icon">
+                </a>
+                <a href="#">
+                    <img src=smIcons/glyph-logo_May2016-white.png alt="instagram icon">
+                </a>
+            </div>
+            
+            <div class="credits">
+                <p>© 2019 Universitatea Transilvania din Brasov | Made by <a href="bestAbout.html"><img src="creditsIcons/robot.png"> BeastRobotics</a></p>
+            </div>
+            
+        </footer>
+    </div>
+
+</body>
+    
+</html>
