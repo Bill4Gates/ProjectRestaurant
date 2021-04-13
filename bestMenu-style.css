@@ -259,7 +259,7 @@ header nav ul li a:hover {
     width: 100%;
     height: calc(100vh - 64px);
     margin-top: 64px;
-    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.65),rgba(0,0,0,0.45),rgba(0,0,0,0.25)), url(backgroundImage/MenuImage.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.65),rgba(0,0,0,0.45),rgba(0,0,0,0.25)), url(backgroundImage/menuImage.jpg);
     background-position: 60% 90%;
     background-repeat: no-repeat;
     background-size: cover;
